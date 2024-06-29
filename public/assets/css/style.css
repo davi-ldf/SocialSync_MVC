@@ -392,12 +392,19 @@ header .head-side {
 }
 
 @media (max-width: 992px) {
-    header .head-side-right {
+    /*header .head-side-right {
         display:none !important;
+    }*/
+
+    header .container {
+        display:flex;
+        height:inherit;
+        justify-content: center;
+        align-items: center;
     }
 
     header .logo {
-        margin-left:10px;
+        margin-left:0px; /*10px*/
     }
 
     .search-area input {
