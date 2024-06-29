@@ -8,7 +8,14 @@
 
                 <?=$render('feed-editor', ['user' => $loggedUser]);?>
 
-                <?=$render('feed-item'); ?>
+                <?php foreach($feed as $feedItem):?>
+                    <?=$render('feed-item', [
+                        'data' => $feedItem,
+                        'loggedUser' => $loggedUser
+                    ]); ?>
+                <?php endforeach;?>
+
+                
 
                 
 
