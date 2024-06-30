@@ -89,9 +89,19 @@ class UserHandler {
 
                     $user->followers[] = $newUser;
                 }
-                
-                // following
 
+                // following
+                $following = UserRelation::select()->where('user_from', $id)->get();
+                foreach($following as $follower) {
+                    $userData = User::select()->where('id', $following['user_to'])->one();
+
+                    $newUser = new User();
+                    $newUser->id = $userData['id'];
+                    $newUser->name = $userData['name'];
+                    $newUser->avatar = $userData['avatar'];
+
+                    $user->following[] = $newUser;
+                }
                 // photos
 
             }
