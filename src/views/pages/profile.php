@@ -18,15 +18,15 @@
                         </div>
                         <div class="profile-info-data row">
                             <div class="profile-info-item m-width-20">
-                                <div class="profile-info-item-n">129</div>
+                                <div class="profile-info-item-n"><?=count($user->followers);?></div>
                                 <div class="profile-info-item-s">Seguidores</div>
                             </div>
                             <div class="profile-info-item m-width-20">
-                                <div class="profile-info-item-n">363</div>
+                                <div class="profile-info-item-n"><?=count($user->following);?></div>
                                 <div class="profile-info-item-s">Seguindo</div>
                             </div>
                             <div class="profile-info-item m-width-20">
-                                <div class="profile-info-item-n">12</div>
+                                <div class="profile-info-item-n"><?=count($user->photos);?></div>
                                 <div class="profile-info-item-s">Fotos</div>
                             </div>
                         </div>
@@ -67,7 +67,7 @@
                     <div class="box-header m-10">
                         <div class="box-header-text">
                             Seguindo
-                            <span>(363)</span>
+                            <span>(<?=count($user->following);?>)</span>
                         </div>
                         <div class="box-header-buttons">
                             <a href="">ver todos</a>
@@ -162,7 +162,7 @@
                     <div class="box-header m-10">
                         <div class="box-header-text">
                             Fotos
-                            <span>(12)</span>
+                            <span>(<?=count($user->photos);?>)</span>
                         </div>
                         <div class="box-header-buttons">
                             <a href="">ver todos</a>

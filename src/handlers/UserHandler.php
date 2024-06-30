@@ -58,7 +58,7 @@ class UserHandler {
 
     }
 
-    public static function getUser($id) {
+    public static function getUser($id, $full = false) {
         $data = User::select()->where('id', $id)->one();
 
         if($data) {
@@ -70,6 +70,13 @@ class UserHandler {
             $user->work = $data['work'];
             $user->avatar = $data['avatar'];
             $user->cover = $data['cover'];
+
+            if($full) {
+                $user->followers = [];
+                $user->following = [];
+                $user->photos = [];
+
+            }
 
             return $user;
         }
