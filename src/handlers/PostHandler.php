@@ -69,11 +69,11 @@ class PostHandler {
             $newPost->user->name = $newUser['name'];
             $newPost->user->avatar = $newUser['avatar'];
 
-            //To Do: 4.1 preencher infos de LIKE
+            //To Do: 4.1 preencher infos de LIKE!
             $newPost->likeCount = 0;
             $newPost->liked = false;
             
-            //To Do: 4.2 preencher infos de COMMENTS
+            //To Do: 4.2 preencher infos de COMMENTS!
             $newPost->comments = [];
 
 
