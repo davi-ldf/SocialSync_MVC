@@ -22,7 +22,7 @@ class PostHandler {
         }
     }
 
-    public function _postListToObject($postList, $loggedUserId) {
+    public static function _postListToObject($postList, $loggedUserId) {
         $posts = [];
         foreach($postList as $postItem) {
             $newPost = new Post();
