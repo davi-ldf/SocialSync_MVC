@@ -24,10 +24,15 @@ class ProfileController extends Controller {
             $id = $atts['id'];
         }
         
-        
+        $user = UserHandler::getUser($id);
 
+        if(!$user) {
+            $this->redirect('/');
+        }
+        
         $this->render('profile', [
-            'loggedUser' => $this->loggedUser
+            'loggedUser' => $this->loggedUser,
+            'user' => $user
         ]);
     }
 

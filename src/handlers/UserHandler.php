@@ -58,6 +58,25 @@ class UserHandler {
 
     }
 
+    public static function getUser($id) {
+        $data = User::select()->where('id', $id)->one();
+
+        if($data) {
+            $user = new User();
+            $user->id = $data['id'];
+            $user->name = $data['name'];
+            $user->birthdate = $data['birthdate'];
+            $user->city = $data['city'];
+            $user->work = $data['work'];
+            $user->avatar = $data['avatar'];
+            $user->cover = $data['cover'];
+
+            return $user;
+        }
+
+        return false;
+    }
+
     public static function addUser($name, $email, $password, $birthdate) {
         $hash = password_hash($password, PASSWORD_DEFAULT);
         $token = md5(time().rand(0, 9999).time());
