@@ -2,6 +2,7 @@
 namespace src\handlers;
 
 use \src\models\User;
+use \src\models\UserRelation;
 
 class UserHandler {
 
@@ -10,7 +11,7 @@ class UserHandler {
             $token = $_SESSION['token'];
 
             $data = User::select()->where('token', $token)->one();
-            if(count($data) > 0) {
+            if($data && count($data) > 0) {
 
                 $loggedUser = new User();
                 $loggedUser->id = $data['id'];
@@ -75,6 +76,23 @@ class UserHandler {
                 $user->followers = [];
                 $user->following = [];
                 $user->photos = [];
+
+                // followers
+                $followers = UserRelation::select()->where('user_to', $id)->get();
+                foreach($followers as $follower) {
+                    $userData = User::select()->where('id', $follower['user_from'])->one();
+
+                    $newUser = new User();
+                    $newUser->id = $userData['id'];
+                    $newUser->name = $userData['name'];
+                    $newUser->avatar = $userData['avatar'];
+
+                    $user->followers[] = $newUser;
+                }
+                
+                // following
+
+                // photos
 
             }
 
