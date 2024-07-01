@@ -25,16 +25,22 @@
 
 
                     <div class="profile-info-item m-width-20">
-                        <div class="profile-info-item-n"><?=count($user->followers);?></div>
-                        <div class="profile-info-item-s">Seguidores</div>
+                        <a href="<?=$base;?>/perfil/<?=$user->id;?>/amigos">
+                            <div class="profile-info-item-n"><?=count($user->followers);?></div>
+                            <div class="profile-info-item-s">Seguidores</div>
+                        </a>
                     </div>
                     <div class="profile-info-item m-width-20">
-                        <div class="profile-info-item-n"><?=count($user->following);?></div>
-                        <div class="profile-info-item-s">Seguindo</div>
+                        <a href="<?=$base;?>/perfil/<?=$user->id;?>/amigos">
+                            <div class="profile-info-item-n"><?=count($user->following);?></div>
+                            <div class="profile-info-item-s">Seguindo</div>
+                        </a>
                     </div>
                     <div class="profile-info-item m-width-20">
-                        <div class="profile-info-item-n"><?=count($user->photos);?></div>
-                        <div class="profile-info-item-s">Fotos</div>
+                        <a href="<?=$base;?>/perfil/<?=$user->id;?>/fotos">
+                            <div class="profile-info-item-n"><?=count($user->photos);?></div>
+                            <div class="profile-info-item-s">Fotos</div>
+                    </a>
                     </div>
                 </div>
             </div>
