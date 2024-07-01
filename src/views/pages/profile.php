@@ -4,7 +4,7 @@
 
     <section class="feed">
 
-    <?=$render('perfil-header', ['user' => $user, 'loggedUser' => $loggedUser]);?>
+    <?=$render('perfil-header', ['user' => $user, 'loggedUser' => $loggedUser, 'isFollowing' => $isFollowing]);?>
 
 
         <div class="row">

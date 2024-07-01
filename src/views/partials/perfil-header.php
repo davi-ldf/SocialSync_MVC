@@ -40,7 +40,7 @@
                         <a href="<?=$base;?>/perfil/<?=$user->id;?>/fotos">
                             <div class="profile-info-item-n"><?=count($user->photos);?></div>
                             <div class="profile-info-item-s">Fotos</div>
-                    </a>
+                        </a>
                     </div>
                 </div>
             </div>
