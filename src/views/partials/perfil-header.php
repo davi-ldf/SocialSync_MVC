@@ -4,10 +4,16 @@
             <div class="profile-cover" style="background-image: url('<?=$base;?>/media/covers/<?=$user->cover;?>');"></div>
             <div class="profile-info m-20 row">
                 <div class="profile-info-avatar">
-                    <img src="<?=$base;?>/media/avatars/<?=$user->avatar;?>" />
+                    <a href="<?=$base;?>/perfil/<?=$user->id;?>">
+                        <img src="<?=$base;?>/media/avatars/<?=$user->avatar;?>" />
+                    </a>
                 </div>
                 <div class="profile-info-name">
-                    <div class="profile-info-name-text"><?=$user->name;?></div>
+                    <div class="profile-info-name-text">
+                        <a href="<?=$base;?>/perfil/<?=$user->id;?>">
+                            <?=$user->name;?>
+                        </a>
+                    </div>
                     <div class="profile-info-location"><?=$user->city;?></div>
                 </div>
                 <div class="profile-info-data row">
