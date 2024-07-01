@@ -82,26 +82,30 @@ class UserHandler {
                 $followers = UserRelation::select()->where('user_to', $id)->get();
                 foreach($followers as $follower) {
                     $userData = User::select()->where('id', $follower['user_from'])->one();
+                    if ($userData) {
+                        $newUser = new User();
+                        $newUser->id = $userData['id'];
+                        $newUser->name = $userData['name'];
+                        $newUser->avatar = $userData['avatar'];
 
-                    $newUser = new User();
-                    $newUser->id = $userData['id'];
-                    $newUser->name = $userData['name'];
-                    $newUser->avatar = $userData['avatar'];
-
-                    $user->followers[] = $newUser;
+                        $user->followers[] = $newUser;
+                    }
                 }
 
                 // following
                 $following = UserRelation::select()->where('user_from', $id)->get();
                 foreach($following as $follower) {
-                    $userData = User::select()->where('id', $following['user_to'])->one();
+                    if(isset($follower['user_to'])) {
+                        $userData = User::select()->where('id', $follower['user_to'])->one();
+                        if($userData) {
+                            $newUser = new User();
+                            $newUser->id = $userData['id'];
+                            $newUser->name = $userData['name'];
+                            $newUser->avatar = $userData['avatar'];
 
-                    $newUser = new User();
-                    $newUser->id = $userData['id'];
-                    $newUser->name = $userData['name'];
-                    $newUser->avatar = $userData['avatar'];
-
-                    $user->following[] = $newUser;
+                            $user->following[] = $newUser;
+                        }
+                    }
                 }
                 // photos
                 $user->photos = PostHandler::getPhotosFrom($id);
@@ -138,6 +142,20 @@ class UserHandler {
             return true;
         }
         return false;
+    }
+
+    public static function follow($from, $to) {
+        UserRelation::insert([
+            'user_from' => $from,
+            'user_to' => $to
+        ])->execute();
+    }
+
+    public static function unfollow($from, $to) {
+        UserRelation::delete()
+            ->where('user_from', $from)
+            ->where('user_to', $to)
+        ->execute();
     }
 
 }
