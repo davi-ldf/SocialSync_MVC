@@ -23,8 +23,12 @@ class SearchController extends Controller {
             $this->redirect('/');
         }
 
+        $users = UserHandler::searchUser( $searchTerm );
+
         $this->render('search', [
-            'loggedUser' => $this->loggedUser
+            'loggedUser' => $this->loggedUser,
+            'searchTerm' => $searchTerm,
+            'users' => $users
         ]);
     }
 
