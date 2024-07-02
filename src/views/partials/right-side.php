@@ -12,6 +12,7 @@
 </div>
 <div class="box">
     <div class="box-body m-10">
-        Todos os direitos reservados
+        🟠Front-End por b7Web <br>
+        🟣Back-End por Davi Lisboa ♥️
     </div>
 </div>

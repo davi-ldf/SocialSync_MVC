@@ -23,7 +23,7 @@ class ConfigController extends Controller {
             $flash = $_SESSION['flash'];
             $_SESSION['flash'] = '';
         }
-
+        var_dump($user->avatar, $user->cover);
         $this->render('settings', [
             'loggedUser' => $this->loggedUser,
             'user' => $user,
@@ -98,7 +98,7 @@ class ConfigController extends Controller {
                 $newCover = $_FILES['cover'];
 
                 if(in_array($newCover['type'], ['image/jpeg', 'image/jpg', 'image/png'])) {
-                    $coverName = $this->cutIamge($newCover, 850, 310, 'media/covers');
+                    $coverName = $this->cutImage($newCover, 850, 310, 'media/covers');
                     $updateFields['cover'] = $coverName;
                 }
             }
@@ -147,7 +147,7 @@ class ConfigController extends Controller {
             $newWidth, $newHeight, $widthOrig, $heightOrig
         );
 
-        $fileName = md5(time().rand(0, 9999)).'jpg';
+        $fileName = md5(time().rand(0, 9999)).'.jpg';
 
         imagejpeg($finalImage, $folder.'/'.$fileName);
 
