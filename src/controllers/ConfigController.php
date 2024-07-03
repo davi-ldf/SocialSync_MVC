@@ -23,7 +23,6 @@ class ConfigController extends Controller {
             $flash = $_SESSION['flash'];
             $_SESSION['flash'] = '';
         }
-        var_dump($user->avatar, $user->cover);
         $this->render('settings', [
             'loggedUser' => $this->loggedUser,
             'user' => $user,
