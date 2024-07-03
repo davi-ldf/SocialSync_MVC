@@ -5,6 +5,7 @@ use \src\models\User;
 use \src\models\Post;
 use \src\models\PostLike;
 use \src\models\UserRelation;
+use \src\models\PostComment;
 
 class PostHandler {
 
@@ -52,7 +53,10 @@ class PostHandler {
             $newPost->liked = self::isLiked($postItem['id'], $loggedUserId);
             
             //To Do: 4.2 preencher infos de COMMENTS!
-            $newPost->comments = [];
+            $newPost->comments = PostComment::select()->where('id_post', $postItem['id'])->get();
+            foreach($newPost->comments as $key => $comment) {
+                $newPost->comments[$key]['user'] = User::select()->where('id', $comment['id_user'])->one();
+            }
 
 
             $posts[] = $newPost;
