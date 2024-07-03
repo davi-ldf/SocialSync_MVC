@@ -58,7 +58,7 @@ if(document.querySelector('.like-btn')) {
                 item.innerText = --count;
             }
 
-	    //fetch(BASE+'/ajax/like/{id}');
+	    fetch(BASE+'/ajax/like/'+id);
         });
     });
 }
