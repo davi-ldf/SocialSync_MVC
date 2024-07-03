@@ -44,8 +44,8 @@ class AjaxController extends Controller {
 
 
 
-            $array['link'] = 'perfil/'.$this->loggedUser->id;
-            $array['avatar'] = 'media/avatars/'.$this->loggedUser->avatar;
+            $array['link'] = '/perfil/'.$this->loggedUser->id;
+            $array['avatar'] = '/media/avatars/'.$this->loggedUser->avatar;
             $array['name'] = $this->loggedUser->name;
             $array['body'] = $txt;
         }
