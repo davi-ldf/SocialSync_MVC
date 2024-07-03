@@ -33,4 +33,20 @@ class AjaxController extends Controller {
 
     }
 
+    public function comment() {
+        $array = ['error' => ''];
+
+        $id = filter_input(INPUT_POST, 'id');
+        $txt = filter_input(INPUT_POST, 'txt');
+
+        if($id && $txt) {
+            PostHandler::addComment($id, $txt, $this->loggedUser->id);
+
+        }
+
+        header('Content-Type: application/json');
+        echo json_encode($array);
+        exit;
+    }
+
 }
