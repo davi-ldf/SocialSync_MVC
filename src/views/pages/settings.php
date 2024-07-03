@@ -6,7 +6,7 @@
     <section class="feed mt-10">
 
     <h1>Configurações</h1>
-
+    
     <?php if(!empty($flash)): ?>
         <div class="flash"><?php echo $flash; ?></div>
     <?php endif;?>

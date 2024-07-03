@@ -19,7 +19,7 @@ class ConfigController extends Controller {
         $user = UserHandler::getUser(($this->loggedUser->id));
 
         $flash = '';
-        if(!empty($_SESSION['flahs'])) {
+        if(!empty($_SESSION['flash'])) {
             $flash = $_SESSION['flash'];
             $_SESSION['flash'] = '';
         }
@@ -49,7 +49,7 @@ class ConfigController extends Controller {
                 if(!UserHandler::emailExists($email)) {
                     $updateFields['email'] = $email;
                 } else {
-                    $_SESSON['flash'] = 'E-mail já utilizado!';
+                    $_SESSION['flash'] = 'E-mail já utilizado!';
                     $this->redirect('/config');
                 }
             }
@@ -57,7 +57,7 @@ class ConfigController extends Controller {
             //BIRTHDATE
             $birthdate = explode('/', $birthdate);
             if(count($birthdate) != 3) {
-                $_SESsION['flash'] = 'Data de nascimento inválida!';
+                $_SESSION['flash'] = 'Data de nascimento inválida!';
                 $this->redirect('/config');
             }
             $birthdate = $birthdate[2].'-'.$birthdate[1].'-'.$birthdate[0];
