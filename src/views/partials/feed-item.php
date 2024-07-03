@@ -39,7 +39,7 @@
                         <a href="<?=$base;?>/perfil/<?=$item['user']['id'];?>"><img src="<?=$base;?>/media/avatars/<?=$item['user']['avatar'];?>" /></a>
                     </div>
                     <div class="fic-item-info">
-                        <a href=""><?=$item['user']['name'];?></a>
+                        <a href="<?=$base;?>/perfil/<?=$item['user']['id'];?>"><?=$item['user']['name'];?></a>
                         <?=$item['body'];?>
                     </div>
                 </div>
