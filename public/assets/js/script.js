@@ -63,7 +63,7 @@ if(document.querySelector('.like-btn')) {
     });
 }
 
-if(document.querySelector('.fic-item-fields')) {
+if(document.querySelector('.fic-item-field')) {
     document.querySelectorAll('.fic-item-field').forEach(item=>{
         item.addEventListener('keyup', async (e)=>{
             if(e.keyCode == 13) {
