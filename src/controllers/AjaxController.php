@@ -42,6 +42,12 @@ class AjaxController extends Controller {
         if($id && $txt) {
             PostHandler::addComment($id, $txt, $this->loggedUser->id);
 
+
+
+            $array['link'] = 'perfil/'.$this->loggedUser->id;
+            $array['avatar'] = 'media/avatars/'.$this->loggedUser->avatar;
+            $array['name'] = $this->loggedUser->name;
+            $array['body'] = $txt;
         }
 
         header('Content-Type: application/json');
