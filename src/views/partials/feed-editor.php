@@ -45,7 +45,7 @@ feedFile.addEventListener('change', async function(){
         alert(json.error);
     }
 
-    //window.location.href = window.location.href;
+    window.location.href = window.location.href;
 });
 
 feedSubmit.addEventListener('click', function(obj) {
