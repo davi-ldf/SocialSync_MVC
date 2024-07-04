@@ -243,6 +243,12 @@ header .head-side {
     height:25px;
 }
 
+.feed-new-file {
+    position: absolute;
+    left: -500px;
+    top: -500px;
+}
+
 .banners .box-body {
     margin:0 10px 10px 10px;
 }
