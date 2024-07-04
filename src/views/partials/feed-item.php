@@ -20,9 +20,11 @@
                 <br/>
                 <span class="fidi-date"><?=date('d/m/Y', strtotime($data->created_at));?></span>
             </div>
+            <?php if($data->mine): ?>
             <div class="feed-item-head-btn">
                 <img src="<?=$base;?>/assets/images/more.png" />
             </div>
+            <?php endif; ?>
         </div>
         <div class="feed-item-body mt-10 m-width-20">
             <?php 
