@@ -23,6 +23,9 @@
             <?php if($data->mine): ?>
             <div class="feed-item-head-btn">
                 <img src="<?=$base;?>/assets/images/more.png" />
+                <div class="feed-item-more-window">
+                    <a href="">Excluir</a>
+                </div>
             </div>
             <?php endif; ?>
         </div>
