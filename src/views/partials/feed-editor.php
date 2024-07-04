@@ -22,7 +22,7 @@
 let feedInput = document.querySelector('.feed-new-input');
 let feedSubmit = document.querySelector('.feed-new-send');
 let feedForm = document.querySelector('.feed-new-form');
-//let feedPhoto = document.querySelector('.feed-new-photo');
+let feedPhoto = document.querySelector('.feed-new-photo');
 //let feedFile = document.querySelector('.feed-new-file');
 
 feedSubmit.addEventListener('click', function(obj) {
