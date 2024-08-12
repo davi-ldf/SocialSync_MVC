@@ -12,16 +12,17 @@
 - PDO extension enabled.
 
 ## Features
-### Admin Panel
-- Add, edit, and delete users and courses.
-- Access detailed reports of all transactions made within the platform.
 
-### Client Panel
-- View, acquire, and watch courses.
-- Spend balance provided by the administrator or directly via a database management platform like phpMyAdmin.
+### Painel do Admin
+- Adicionar, editar e deletar usuários e cursos.
+- Acessar relatórios detalhados de todas as transações realizadas na plataforma.
 
-### Password Recovery
-- On the login screen, there is a "Forgot your password?" button through which you can request an email with a new password.
+### Painel do Cliente
+- Visualizar, adquirir e assistir aos cursos.
+- Gastar saldo fornecido pelo administrador ou diretamente via uma plataforma de gerenciamento de banco de dados, como phpMyAdmin.
+
+### Recuperação de Senha
+- Na tela de login, há um botão "Esqueceu sua senha?" pelo qual você pode solicitar um email com uma nova senha.
 
 
 ## Setup
