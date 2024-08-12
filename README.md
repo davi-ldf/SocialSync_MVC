@@ -42,7 +42,7 @@ $db_pass = 'your_password';
 - Email: youremail@email.com
 - Password: yourpassword
 
-![Tela Login](public/assets/images/telaHome.png)
+![Tela Home](public/assets/images/telaHome.png)
 
 ## Features
 
@@ -105,6 +105,8 @@ $db_pass = 'sua_senha';
 
 ```
 
+![Tela Login](public/assets/images/telaLogin.png) 
+
 ## Uso
 
 ### Login
@@ -114,6 +116,8 @@ $db_pass = 'sua_senha';
 ### Cadastro
 - Usuário: seuemail@email.com
 - Senha: suasenha
+
+![Tela Home](public/assets/images/telaHome.png)
 
 ## Funcionalidades
 
