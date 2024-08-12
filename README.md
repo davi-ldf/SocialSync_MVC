@@ -30,9 +30,9 @@ $db_pass = 'your_password';
 
 ```
 
-![Tela Login](public/assets/images/telaLogin.png) 
-
 ## Usage
+
+![Tela Login](public/assets/images/telaLogin.png) 
 
 ### Sign In
 - Email: user@teste.com
@@ -42,9 +42,9 @@ $db_pass = 'your_password';
 - Email: youremail@email.com
 - Password: yourpassword
 
-![Tela Home](public/assets/images/telaHome.png)
-
 ## Features
+
+![Tela Home](public/assets/images/telaHome.png)
 
 ### User Registration and Login
 - Sign up and log in to your account securely.
@@ -105,9 +105,9 @@ $db_pass = 'sua_senha';
 
 ```
 
-![Tela Login](public/assets/images/telaLogin.png) 
-
 ## Uso
+
+![Tela Login](public/assets/images/telaLogin.png) 
 
 ### Login
 - Usuário: user@teste.com
@@ -117,9 +117,9 @@ $db_pass = 'sua_senha';
 - Usuário: seuemail@email.com
 - Senha: suasenha
 
-![Tela Home](public/assets/images/telaHome.png)
-
 ## Funcionalidades
+
+![Tela Home](public/assets/images/telaHome.png)
 
 ### Cadastro e Login de Usuários 
 - Cadastre-se e faça login na sua conta de forma segura.
