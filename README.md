@@ -45,16 +45,16 @@ $db_pass = 'your_password';
 
 ## Features
 
-###User Registration and Login
+### User Registration and Login
 - Sign up and log in to your account securely.
 
-###Post, Like and Comment
+### Post, Like and Comment
 - Share posts, like and comment on others' posts.
 
-###Follow Users 
+### Follow Users 
 - Follow other users and view their updates on your feed.
 
-###Profile Custoization
+### Profile Custoization
 - Customize your profile by changing your name, cover photo, password, location, profession, and more.
   
 
@@ -116,16 +116,16 @@ $db_pass = 'sua_senha';
 
 ## Funcionalidades
 
-###Cadastro e Login de Usuários 
+### Cadastro e Login de Usuários 
 - Cadastre-se e faça login na sua conta de forma segura.
 
-###Publicar, Curtir, Comentar
+### Publicar, Curtir, Comentar
 - Compartilhe publicações, curta e comente nas publicações de outros usuários.
 
-###Seguir Usuários 
+### Seguir Usuários 
 - Siga outros usuários e veja suas atualizações no seu feed.
 
-###Personalização de Perfil
+### Personalização de Perfil
 - Personalize seu perfil alterando seu nome, foto de capa, senha, localidade, profissão, e muito mais.
 
 
