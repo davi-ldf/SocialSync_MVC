@@ -11,20 +11,6 @@
 - MySQL database
 - PDO extension enabled.
 
-## Features
-
-### Painel do Admin
-- Adicionar, editar e deletar usuários e cursos.
-- Acessar relatórios detalhados de todas as transações realizadas na plataforma.
-
-### Painel do Cliente
-- Visualizar, adquirir e assistir aos cursos.
-- Gastar saldo fornecido pelo administrador ou diretamente via uma plataforma de gerenciamento de banco de dados, como phpMyAdmin.
-
-### Recuperação de Senha
-- Na tela de login, há um botão "Esqueceu sua senha?" pelo qual você pode solicitar um email com uma nova senha.
-
-
 ## Setup
 
 1. Clone this repository to your local environment:
@@ -56,6 +42,20 @@ $db_pass = 'your_password';
 ### Sign Up
 - Email: youremail@email.com
 - Password: yourpassword
+
+## Features
+
+###User Registration and Login
+- Sign up and log in to your account securely.
+
+###Post, Like and Comment
+- Share posts, like and comment on others' posts.
+
+###Follow Users 
+- Follow other users and view their updates on your feed.
+
+###Profile Custoization
+- Customize your profile by changing your name, cover photo, password, location, profession, and more.
   
 
 ## Contribution
@@ -80,20 +80,6 @@ Projeto de rede social aos moldes da plataforma do Facebook. Desenvolvido em PHP
 - Servidor web compatível com PHP (por exemplo, Apache, Nginx)
 - Banco de dados MySQL
 - Extensão Mysqli habilitada
-
-
-## Funcionalidades
-
-### Painel do Admin
-- Adicionar, editar e deletar usuários e cursos.
-- Acessar relatórios detalhados de todas as transações realizadas na plataforma.
-
-### Painel do Cliente
-- Visualizar, adquirir e assistir aos cursos.
-- Gastar saldo fornecido pelo administrador ou diretamente via uma plataforma de gerenciamento de banco de dados, como phpMyAdmin.
-
-### Recuperação de Senha
-- Na tela de login, há um botão "Esqueceu sua senha?" pelo qual você pode solicitar um email com uma nova senha.
 
 
 ## Instalação
@@ -129,11 +115,18 @@ $db_pass = 'sua_senha';
 - Senha: suasenha
 
 ## Funcionalidades
-**Cadastro e Login de Usuários:** Cadastre-se e faça login na sua conta de forma segura.
-**Publicar, Curtir, Comentar:** Compartilhe publicações, curta e comente nas publicações de outros usuários.
-**Seguir Usuários:** Siga outros usuários e veja suas atualizações no seu feed.
-**Personalização de Perfil:** Personalize seu perfil alterando seu nome, foto de capa, senha, localidade, profissão, e muito mais.
 
+###Cadastro e Login de Usuários 
+- Cadastre-se e faça login na sua conta de forma segura.
+
+###Publicar, Curtir, Comentar
+- Compartilhe publicações, curta e comente nas publicações de outros usuários.
+
+###Seguir Usuários 
+- Siga outros usuários e veja suas atualizações no seu feed.
+
+###Personalização de Perfil
+- Personalize seu perfil alterando seu nome, foto de capa, senha, localidade, profissão, e muito mais.
 
 
 
