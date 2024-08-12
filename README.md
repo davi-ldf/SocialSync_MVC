@@ -1,5 +1,3 @@
-![Tela Login](public/assets/images/telaLogin.png) ![Tela Login](public/assets/images/telaHome.png)
-
 # SocialSync
  Social network project similar to the Facebook platform. Developed in PHP using the MVC design pattern and the MySQL relational database management system. 
 
@@ -32,6 +30,8 @@ $db_pass = 'your_password';
 
 ```
 
+![Tela Login](public/assets/images/telaLogin.png) 
+
 ## Usage
 
 ### Sign In
@@ -41,6 +41,8 @@ $db_pass = 'your_password';
 ### Sign Up
 - Email: youremail@email.com
 - Password: yourpassword
+
+![Tela Login](public/assets/images/telaHome.png)
 
 ## Features
 
