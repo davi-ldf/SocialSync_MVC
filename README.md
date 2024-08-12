@@ -110,11 +110,11 @@ $db_pass = 'sua_senha';
 ![Tela Login](public/assets/images/telaLogin.png) 
 
 ### Login
-- Usuário: user@teste.com
+- Email: user@teste.com
 - Senha: 123456
 
 ### Cadastro
-- Usuário: seuemail@email.com
+- Email: seuemail@email.com
 - Senha: suasenha
 
 ## Funcionalidades
