@@ -15,10 +15,10 @@
 
 1. Clone this repository to your local environment:
 
-    `git clone https://github.com/davi-ldf/API_NoteCore.git`
+    `git clone https://github.com/davi-ldf/SocialSync_MVC.git`
 
 
-2. Import the `escola_ead.sql` file located in the root of the project in your MySQL database management tool (such as MySQL Workbench, phpMyAdmin, or via command line).
+2. Import the `socialsync.sql` file located in the root of the project in your MySQL database management tool (such as MySQL Workbench, phpMyAdmin, or via command line).
 
 3. Rename the `Config.example.php` file to `Config.php`.
 
@@ -85,10 +85,10 @@ Projeto de rede social aos moldes da plataforma do Facebook. Desenvolvido em PHP
 ## Instalação
 1. Clone este repositório para seu ambiente local:
 
-    `git clone https://github.com/davi-ldf/API_NoteCore.git`
+    `git clone https://github.com/davi-ldf/SocialSync_MVC.git`
 
 
-2. Importe o arquivo `escola_ead.sql` localizado na raiz do projeto no seu gerenciador de banco de dados MySQL (como MySQL Workbench, phpMyAdmin, ou via linha de comando).
+2. Importe o arquivo `socialsync.sql` localizado na raiz do projeto no seu gerenciador de banco de dados MySQL (como MySQL Workbench, phpMyAdmin, ou via linha de comando).
 
 3. Renomeie o arquivo `Config.example.php` para `Config.php`.
 
