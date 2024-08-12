@@ -30,7 +30,7 @@ $db_pass = 'your_password';
 
 ```
 
-5. Update the `BASE_DIR` path** in `Config.php`:
+5. **Update the `BASE_DIR` path** in `Config.php`:
     ```php
     class Config {
         const BASE_DIR = '/yourpastename/SocialSync_MVC/public';
@@ -112,7 +112,7 @@ $db_pass = 'sua_senha';
 
 ```
 
-5. Atualize o caminho do `BASE_DIR`** em `Config.php`:
+5. **Atualize o caminho do `BASE_DIR`** em `Config.php`:
     ```php
     class Config {
         const BASE_DIR = '/nomedasuapasta/SocialSync_MVC/public';
