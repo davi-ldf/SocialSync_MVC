@@ -62,7 +62,7 @@ $db_pass = 'your_password';
 ### Follow Users 
 - Follow other users and view their updates on your feed.
 
-### Profile Custoization
+### Profile Customization
 - Customize your profile by changing your name, cover photo, password, location, profession, and more.
   
 
